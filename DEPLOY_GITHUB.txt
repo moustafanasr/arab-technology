@@ -1,0 +1,14 @@
+ARAB TECHNOLOGY — SHARE WITH YOUR CLIENT
+=======================================
+
+1. Go to https://github.com/new
+2. Create public repository arab-technology-preview.
+3. Upload every file/folder in this ZIP to the repository root.
+4. Settings -> Pages -> Deploy from branch -> main -> /(root) -> Save.
+5. Your client can visit:
+   https://YOUR-USERNAME.github.io/arab-technology-preview/
+
+No domain or GitHub account connection has been configured by this package.
+The link above is an example; replace YOUR-USERNAME with your GitHub username.
+
+NOTE: This package is a static client-approval prototype, not yet an installable WordPress theme.
