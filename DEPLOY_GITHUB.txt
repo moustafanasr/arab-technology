@@ -1,14 +1,31 @@
-ARAB TECHNOLOGY — SHARE WITH YOUR CLIENT
-=======================================
+ARAB TECHNOLOGY — COMPACT VERSION 2.0
+=====================================
 
-1. Go to https://github.com/new
-2. Create public repository arab-technology-preview.
-3. Upload every file/folder in this ZIP to the repository root.
-4. Settings -> Pages -> Deploy from branch -> main -> /(root) -> Save.
-5. Your client can visit:
-   https://YOUR-USERNAME.github.io/arab-technology-preview/
+Repository:
+https://github.com/moustafanasr/arab-technology.git
 
-No domain or GitHub account connection has been configured by this package.
-The link above is an example; replace YOUR-USERNAME with your GitHub username.
+Open a terminal INSIDE the unzipped website folder (where index.html is).
 
-NOTE: This package is a static client-approval prototype, not yet an installable WordPress theme.
+FIRST UPLOAD (if Git has not yet been initialized):
+  git init
+  git branch -M main
+  git remote add origin https://github.com/moustafanasr/arab-technology.git
+  git add .
+  git commit -m "Refine compact UI and responsive spacing"
+  git push -u origin main
+
+EXISTING CHECKED-OUT REPOSITORY (preferred for ongoing updates):
+  git add .
+  git commit -m "Refine UI: compact typography and spacing"
+  git push origin main
+
+If the original remote already exists but points elsewhere:
+  git remote set-url origin https://github.com/moustafanasr/arab-technology.git
+
+Publish with GitHub: Settings -> Pages -> Deploy from branch -> main -> /(root).
+Project page (after Pages is enabled):
+https://moustafanasr.github.io/arab-technology/
+
+IMPORTANT: index.html must remain at the repository root, alongside css/, js/, assets/.
+Keep both css/styles.css and css/compact-refinement.css: the latter is the new compact design layer.
+Do NOT use git push --force to overwrite an existing repository history.

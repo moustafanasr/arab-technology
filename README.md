@@ -101,3 +101,9 @@ Recommended handoff plan:
 - Browser tests on Chromium, Firefox, Safari in normal environments
 
 © 2026. Demo for client approval; product photographs/marks are supplied client assets.
+
+## Compact design refinement — v2.0 (2026-11-01)
+
+The updated layout preserves all existing HTML, JS, animations, product inventory and enquiry features. A small design-layer stylesheet `css/compact-refinement.css` is linked after `styles.css` and adjusts typography, spacing, card proportions, responsive rules, and component density. Edit these rules for visual tuning; do not delete `styles.css`.
+
+Deployment: Upload all files to the repository root, including **both CSS files** and `assets/`, then enable GitHub Pages from `main` / `/(root)`. HTML contains `?v=2.0` on the CSS links to encourage clients' browsers to pick up the changes.

@@ -37,11 +37,12 @@
   const getName=(p)=>lang==='ar'?p.ar:p.name;
   function renderProducts(){
     const filtered=products.filter(p=>(activeFilter==='all'||p.cat===activeFilter)&&[p.name,p.ar,p.short,p.shortAr,...p.specs.flat()].join(' ').toLowerCase().includes(search));
-    const shown=expanded||activeFilter!=='all'||search?filtered:filtered.slice(0,6);
+    const previewLimit=window.matchMedia('(min-width: 1251px)').matches?8:6;
+    const shown=expanded||activeFilter!=='all'||search?filtered:filtered.slice(0,previewLimit);
     grid.innerHTML=shown.map((p,i)=>`<article class="product-card"><button class="product-card__image" type="button" data-details="${p.id}" aria-label="${escapeHTML(current().viewDetails+' '+getName(p))}"><span class="product-card__index">AT / ${String(products.indexOf(p)+1).padStart(2,'0')}</span><span class="product-card__tag">${escapeHTML(current().categoryName[p.cat])}</span><img src="./assets/${p.image}" alt="${escapeHTML(getName(p))}" loading="lazy"></button><div class="product-card__content"><span class="product-card__category">${escapeHTML(current().categoryName[p.cat])}</span><h3>${escapeHTML(getName(p))}</h3><div class="product-card__specs"><span>${escapeHTML(p.specs[0][0])}</span><strong>${escapeHTML(p.specs[0][1])}</strong></div><div class="product-card__bottom"><button class="product-card__detail" type="button" data-details="${p.id}">${escapeHTML(current().viewDetails)} ↗</button><button class="product-card__quote" type="button" data-product-quote="${p.id}" aria-label="${escapeHTML(current().requestQuote+' '+getName(p))}">↗</button></div></div></article>`).join('');
     empty.hidden=filtered.length>0;
     $('#products-count').textContent=`${current().shown} ${shown.length} ${current().of} ${filtered.length} ${current().products}`;
-    moreBtn.hidden=!!search||activeFilter!=='all'||filtered.length<=6;
+    moreBtn.hidden=!!search||activeFilter!=='all'||filtered.length<=previewLimit;
     moreBtn.querySelector('span').textContent=expanded?current().showLess:current().showAllProducts;
   }
   function setFilter(cat){activeFilter=cat;expanded=false;$$('[data-filter]').forEach(b=>{const yes=b.dataset.filter===cat;b.classList.toggle('is-selected',yes);b.setAttribute('aria-pressed',String(yes));});renderProducts();}
