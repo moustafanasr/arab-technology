@@ -1,31 +1,19 @@
-ARAB TECHNOLOGY — COMPACT VERSION 2.0
-=====================================
+Arab Technology UI Match v3.1 — GitHub Deployment
 
-Repository:
-https://github.com/moustafanasr/arab-technology.git
+Repository: https://github.com/moustafanasr/arab-technology.git
 
-Open a terminal INSIDE the unzipped website folder (where index.html is).
+1. Download and unzip the archive.
+2. Copy all files to your local repository (index.html at root).
+3. Open terminal in the local repository folder.
+4. Run:
 
-FIRST UPLOAD (if Git has not yet been initialized):
-  git init
-  git branch -M main
-  git remote add origin https://github.com/moustafanasr/arab-technology.git
-  git add .
-  git commit -m "Refine compact UI and responsive spacing"
-  git push -u origin main
+   git status
+   git add -A
+   git commit -m "Implement approved Arab Technology homepage design"
+   git push origin main
 
-EXISTING CHECKED-OUT REPOSITORY (preferred for ongoing updates):
-  git add .
-  git commit -m "Refine UI: compact typography and spacing"
-  git push origin main
+5. In repository Settings > Pages, publish main branch / (root).
+6. Website URL after GitHub Pages deployment:
+   https://moustafanasr.github.io/arab-technology/
 
-If the original remote already exists but points elsewhere:
-  git remote set-url origin https://github.com/moustafanasr/arab-technology.git
-
-Publish with GitHub: Settings -> Pages -> Deploy from branch -> main -> /(root).
-Project page (after Pages is enabled):
-https://moustafanasr.github.io/arab-technology/
-
-IMPORTANT: index.html must remain at the repository root, alongside css/, js/, assets/.
-Keep both css/styles.css and css/compact-refinement.css: the latter is the new compact design layer.
-Do NOT use git push --force to overwrite an existing repository history.
+If there are uncommitted changes in your existing repository, commit or back them up before copying in this version. Do not use git push --force.

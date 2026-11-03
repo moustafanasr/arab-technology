@@ -1,109 +1,71 @@
-# Arab Technology for Supplies — Homepage Preview
+# Arab Technology for Supplies — UI/UX Reference Implementation (v3.1)
 
-A bespoke, responsive, **static front-end prototype** for the future WordPress website. Crafted with semantic HTML, custom CSS and plain JavaScript (no React, no build step, no Node dependencies).
+**HTML, CSS, JavaScript only. No WordPress, no PHP, no build tooling.** This homepage implements the visual structure supplied in `docs/client-design-reference.png` while using product data and actual device photography from the supplied Arab Technology catalogue.
 
-## Quick start
+## What's implemented
 
-1. Extract all files, keeping the folder structure.
-2. From the project directory run:
-   ```bash
-   python -m http.server 8000
-   ```
-3. Open `http://localhost:8000/`.
+- Blue contact bar, white branded header with search, navigation, EN/AR toggle
+- Bright industrial hero, authentic machine images, material-focused category cards
+- Responsive five-column featured catalogue (desktop), mobile product cards
+- Live product search and category filters over **12 brochure-based devices**
+- Product detail dialogs, save-for-later, up to 3 products in comparison list
+- Four industry application cards, technical guidance section, quotation process
+- Industry testing-standard references (not claimed certifications or partnerships)
+- Accessible enquiry form that opens a **pre-filled WhatsApp message** without collecting data
+- GSAP/ScrollTrigger and Lenis from pinned CDNs; lightweight optional Three.js line-art hero
+- Reduced-motion preference, mobile navigation, image alt text, keyboard-accessible dialogs, RTL support
 
-The website is also ready for **GitHub Pages**. `index.html` must be at the published repository root. All local paths are relative, so project-site URLs work correctly.
-
-## Publish for client approval (GitHub Pages)
-
-1. Create a **public** repository on GitHub, for example `arab-technology-preview`.
-2. Upload the **contents of this folder** to the repository root (not another nested folder). Commit the files to `main`.
-3. Open **Settings → Pages → Build and deployment**.
-4. Set **Source: Deploy from a branch**, **Branch: main**, **Folder: /(root)**, then **Save**.
-5. Share the URL GitHub displays. For a standard project repository, it takes the form:
-   `https://YOUR-USERNAME.github.io/arab-technology-preview/`
-
-GitHub Pages serves the page publicly. Don't upload credentials, confidential content or client records.
-
-### Terminal alternative (after creating an empty repository)
-
-```bash
-git init
-git add .
-git commit -m "Initial Arab Technology homepage preview"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/arab-technology-preview.git
-git push -u origin main
-```
-
-Then enable Pages using the settings above.
-
-## Front-end architecture
+## Files
 
 ```text
-index.html           Semantic homepage and accessible dialogs
-css/styles.css       Tokens, responsive components, motion fallback, RTL support
-js/app.js            Product data, searching, category filters, details, language, quote flow, GSAP/Lenis
-js/scene.js          Optional Three.js WebGL hero artwork (desktop, reduced-motion aware)
-js/polyfills.js      Small feature-detected compatibility fallbacks
-assets/              Brand-derived catalogue imagery, product cuts, SVG favicon
-.nojekyll            GitHub Pages static hosting bypass
+index.html                  Page markup and accessibility
+css/styles.css              All visual tokens, typography, responsive design
+js/app.js                   Product catalogue, navigation, filters, modals, language
+js/scene.js                 Optional Three.js/WebGL light 3D decoration
+js/polyfills.js             Feature-detected fallbacks
+assets/                     Original catalogue photos, logo, decorative imagery
+assets/arab-technology-catalog.pdf  Source catalogue / downloadable PDF
+assets/industrial-skyline.svg       Decorative construction backdrop
+docs/client-design-reference.png    User-provided UI reference image
+.nojekyll                   GitHub Pages bypass for Jekyll
 ```
 
-## Animation stack
+## Preview locally
 
-- **GSAP 3.15.0 + ScrollTrigger**: hero timeline, entrance, scroll reveal, parallax.
-- **Lenis 1.3.17**: smooth scrolling on fine-pointer devices, synced to GSAP ticker.
-- **Three.js 0.180.0**: optional orbiting wireframe 3D field behind the hero machine.
-- **Native CSS**: moving technical marquee, hover responses, geometric layers, skeleton fallback.
-- **Tiny local feature-detected polyfills**: no reliance on unmaintained polyfill services.
+Run from the project folder:
 
-Third-party libraries and web fonts use public CDNs and require an internet connection. **The base HTML/CSS and product interactions remain usable when the animation libraries cannot load.** To release a fully offline/production build, vendor the locked library files and fonts locally and comply with their licenses.
+```bash
+python -m http.server 8000
+```
 
-## Functional UX in this preview
+Then open `http://localhost:8000` in your browser. CDN effects load with internet access; the site remains usable without GSAP or Three.js.
 
-- Responsive navigation (desktop and mobile)
-- English / Arabic toggle with RTL layout and remembered session preference
-- Search and category filtering across **12 catalogued devices**
-- Individual product detail dialogs displaying brochure-derived specifications
-- Accessible quotation form that drafts a WhatsApp message for manual sending
-- Screen-reader labels, keyboard navigation, reduced-motion support, native scrolling fallbacks
+## GitHub Pages deployment
 
-**This is not yet a functioning WordPress theme or a transactional ecommerce backend.** There is no CMS, checkout, lead database, CRM, contact-form API or email sending. The WhatsApp form opens the user's own WhatsApp application with an editable message.
+1. Upload the **files inside this ZIP** to the root of the repository `moustafanasr/arab-technology`, replacing old homepage files and obsolete CSS if necessary.
+2. Commit and push to `main`.
+3. Under **Settings → Pages**, select **Deploy from a branch** → `main` → `/(root)`.
+4. Preview at `https://moustafanasr.github.io/arab-technology/` once the site is published. This is a URL pattern, not a claim that deployment has been performed.
 
-## Brand/content verification before production
+### Terminal commands (from repository folder)
 
-- Product names, capabilities and photography are based on the client-provided 13-page equipment PDF (12 equipment entries and cover).
-- Phone numbers found in the supplied catalogue: `01114447033` and `01100048700`. Confirm current numbers and preferred sales WhatsApp account.
-- No invented customer testimonials, service certifications, partner logos, branch addresses, prices or emails are displayed.
-- Replace the stylized compact header wordmark with an approved scalable brand logo if a final vector asset is supplied.
-- Have technical staff review model specifications and any post-sales/maintenance claims before launch.
+```bash
+git add -A
+git commit -m "Match homepage to approved UI design reference"
+git push origin main
+```
 
-## WordPress handoff approach
+Do **not** force-push. Preserve a backup or commit of the previous site before overwriting.
 
-This is a **front-end design approval build**. For WordPress development, do not upload this ZIP as a WP theme: it lacks mandatory PHP template files.
+## Data / commercial accuracy
 
-Recommended handoff plan:
+- Product photos and capacities are taken from the client's uploaded PDF, not from the generated concept screenshot.
+- The company phone numbers in the catalogue are 01114447033 and 01100048700. Confirm the intended WhatsApp number before production.
+- Brand partnerships, customer logos, addresses, certifications, and other facts depicted in the original generated design have **not** been asserted without independent verification.
+- Images for the category tiles and industry tiles are crops from the **user-provided design screenshot** for visual matching, and can be replaced with approved high-resolution client images before launch.
+- The "Technical Reference" standards row is **reference only**, not an assertion that individual products are certified.
+- This is a static preview: no server, accounts, customer database, payment or newsletter capture. The quote form opens WhatsApp only.
 
-1. Move header/footer to `header.php`, `footer.php` and template parts, and register enqueued styles/scripts in `functions.php`.
-2. Replace `products` JavaScript array with WordPress custom post type `equipment`, taxonomies `testing_category`, and structured custom fields for capacity, controls, images and technical specifications.
-3. Render product cards server-side for SEO and add native search, taxonomies and pagination; use REST only where it improves interactions.
-4. Implement EN/AR through a reviewed localization workflow with real RTL templates and translated content.
-5. Connect quotation handling to the production sales process, with consent, validation, spam protection and data retention policy.
-6. Optimize media, use asset versioning, cache rules, security headers and automated functional/accessibility/performance reviews before production.
+## WordPress handoff (later)
 
-## Testing checklist
-
-- 1440px desktop and 390px mobile layouts
-- Product filters, catalogue search, load more, detail modal
-- EN/AR toggle, keyboard escape, reduced-motion support
-- WhatsApp button opens an editable message (not auto-sent)
-- Cross-origin libraries load in hosted HTTPS environment
-- Browser tests on Chromium, Firefox, Safari in normal environments
-
-© 2026. Demo for client approval; product photographs/marks are supplied client assets.
-
-## Compact design refinement — v2.0 (2026-11-01)
-
-The updated layout preserves all existing HTML, JS, animations, product inventory and enquiry features. A small design-layer stylesheet `css/compact-refinement.css` is linked after `styles.css` and adjusts typography, spacing, card proportions, responsive rules, and component density. Edit these rules for visual tuning; do not delete `styles.css`.
-
-Deployment: Upload all files to the repository root, including **both CSS files** and `assets/`, then enable GitHub Pages from `main` / `/(root)`. HTML contains `?v=2.0` on the CSS links to encourage clients' browsers to pick up the changes.
+After approval, convert shared sections to `header.php`, `footer.php`, and `template-parts/`, move product records into an `equipment` custom post type, build taxonomies and templates, and enqueue the CSS/JS assets with `wp_enqueue_*`. Keep the visual design and frontend effects, with additional SEO, accessibility, and cross-browser checks.
