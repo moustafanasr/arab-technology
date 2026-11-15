@@ -2,69 +2,69 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#082a53">
-  <meta name="description" content="Tell Arab Technology what you need using a simple, guided equipment enquiry. No lengthy forms.">
-  <title>Find Your Solution | Arab Technology for Supplies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a2c52">
+  <meta name="description" content="Select your equipment requirement and request guidance from Arab Technology.">
+  <title>Equipment Enquiry | Arab Technology for Supplies</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./css/styles.css?v=3.2">
-  <link rel="stylesheet" href="./css/application-flow.css?v=4">
+  <link rel="stylesheet" href="./css/application-flow.css?v=5.0">
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
-  <script src="./js/application.js?v=4" defer></script>
+  <script src="./js/application.js?v=5.0" defer></script>
 </head>
 <body class="application-page">
 <a class="skip" href="#application-main">Skip to form</a>
-<div class="app-utility"><div class="site-container app-utility-inner"><span data-i18n="utility">Precision equipment. Simple decisions.</span><a href="tel:+201114447033"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5c-1.5 0-2.5 1.5-2.5 3.5 0 6.3 7.1 13.5 13.5 13.5 2 0 3.5-1 3.5-2.5v-2l-5-2-2.5 2.2c-2.9-1.4-5.4-3.9-6.8-6.8l2.2-2.5-2-5Z"/></svg> 0111 444 7033</a></div></div>
-<header class="app-header"><div class="site-container app-header-inner">
-  <a class="app-brand" href="./index.html" aria-label="Arab Technology — home"><img src="./assets/logo-mark.png" width="44" height="44" alt=""><span><strong>ARAB TECHNOLOGY</strong><small>FOR SUPPLIES</small></span></a>
-  <nav class="app-header-actions" aria-label="Page navigation"><a href="./index.html#industries" class="app-back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7M7 12h13"/></svg><span data-i18n="back">Back to website</span></a><button type="button" id="app-language" aria-label="Change language">EN <span>|</span> AR</button></nav>
-</div></header>
-<main id="application-main" class="app-main">
-  <div class="site-container">
-    <div class="app-intro"><p class="app-kicker"><span></span><span data-i18n="eyebrow">YOUR EQUIPMENT ENQUIRY</span></p><h1 data-i18n="heading">Tell us what you need. <em>We'll help you find it.</em></h1><p data-i18n="lead">Choose from a few ready-made answers, add your contact details, and you're done.</p>
-      <div class="app-steps" aria-hidden="true"><span><b>01</b><span data-i18n="stepOne">Choose your need</span></span><i></i><span><b>02</b><span data-i18n="stepTwo">Your contact details</span></span></div>
+<header class="enquiry-header">
+  <div class="site-container enquiry-header-inner">
+    <a class="enquiry-brand" href="./index.html" aria-label="Arab Technology home"><img src="./assets/logo-mark.png" alt="" width="42" height="42"><span><strong>ARAB TECHNOLOGY</strong><small>FOR SUPPLIES</small></span></a>
+    <div class="enquiry-header-actions">
+      <a class="enquiry-back" href="./index.html#industries"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m7 7-7-7 7-7"/></svg><span data-i18n="back">Back to website</span></a>
+      <button type="button" id="app-language" aria-label="Switch language">العربية</button>
     </div>
-    <div class="app-workspace">
-      <aside class="app-summary" aria-labelledby="summary-heading"><div class="app-summary-inner"><p class="app-small-label"><span class="app-status-dot"></span><span data-i18n="summaryLabel">YOUR SELECTED NEED</span></p>
-          <div class="app-summary-picture"><img id="selected-image" src="./assets/industry-lab.webp" alt="Selected application"></div>
-          <div class="app-summary-body"><span class="app-selected-tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="selected">Selected</span></span><h2 id="summary-heading">Setting up a testing laboratory</h2><p id="selected-description">I need help choosing equipment for my lab.</p><a href="#choose-need" class="app-change" data-i18n="change">Change selection ↗</a></div>
-          <div class="app-summary-tip"><span class="app-tip-icon">✦</span><p data-i18n="tip">Not sure about the equipment model? That's okay. Tell us the type of test you need.</p></div>
-        </div>
+  </div>
+</header>
+<main id="application-main" class="enquiry-main">
+  <div class="site-container enquiry-container">
+    <div class="enquiry-intro">
+      <span class="enquiry-eyebrow" data-i18n="eyebrow">EQUIPMENT ENQUIRY</span>
+      <h1 data-i18n="heading">Find the right testing equipment.</h1>
+      <p data-i18n="lead">Select your request and leave your number. We'll help you choose.</p>
+    </div>
+    <div class="enquiry-layout">
+      <aside class="enquiry-visual" aria-labelledby="preview-heading">
+        <div class="enquiry-visual-image"><img id="selected-image" src="./assets/industry-lab.webp" alt="Laboratory equipment" loading="eager"><span class="enquiry-image-label" data-i18n="imageTag">YOUR REQUEST</span></div>
+        <div class="enquiry-visual-caption"><span class="enquiry-indicator"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span><div><h2 id="preview-heading">Testing laboratory equipment</h2><p id="selected-description">Choose a type of request to get started.</p></div></div>
       </aside>
-      <form id="application-form" class="app-form" novalidate>
-        <div id="choose-need" class="app-form-section">
-          <div class="app-section-heading"><span class="app-number">01</span><div><h2 data-i18n="chooseHeading">What best describes your situation?</h2><p data-i18n="chooseSub">Your selection is already highlighted. You can change it.</p></div></div>
-          <fieldset class="app-choice-fieldset"><legend class="sr-only">Choose your main need</legend>
-            <div class="app-choice-grid" id="primary-choices">
-              <label class="app-choice"><input type="radio" name="need" value="lab"><span class="app-choice-icon">01</span><span class="app-choice-name" data-need-title="lab">Setting up a testing laboratory</span><span class="app-choice-check" aria-hidden="true">✓</span></label>
-              <label class="app-choice"><input type="radio" name="need" value="site"><span class="app-choice-icon">02</span><span class="app-choice-name" data-need-title="site">Equipment for my construction site</span><span class="app-choice-check" aria-hidden="true">✓</span></label>
-              <label class="app-choice"><input type="radio" name="need" value="research"><span class="app-choice-icon">03</span><span class="app-choice-name" data-need-title="research">Equipment for research or teaching</span><span class="app-choice-check" aria-hidden="true">✓</span></label>
-              <label class="app-choice"><input type="radio" name="need" value="quality"><span class="app-choice-icon">04</span><span class="app-choice-name" data-need-title="quality">Quality control and inspection</span><span class="app-choice-check" aria-hidden="true">✓</span></label>
-            </div>
-          </fieldset>
-        </div>
-        <div class="app-form-section app-details-section" id="detail-options-wrap">
-          <div class="app-section-heading app-section-heading--compact"><span class="app-number">✦</span><div><h2 data-i18n="detailHeading">What's the main challenge?</h2><p data-i18n="detailSub">Tap one option. You don't have to write anything.</p></div></div>
-          <fieldset class="app-detail-fieldset"><legend class="sr-only">Select a challenge</legend><div id="detail-options" class="app-detail-options"></div></fieldset>
-        </div>
-        <div class="app-form-section app-contact-section">
-          <div class="app-section-heading"><span class="app-number">02</span><div><h2 data-i18n="contactHeading">How can we contact you?</h2><p data-i18n="contactSub">Only your name and phone number are required.</p></div></div>
-          <div class="app-input-grid">
-            <div class="app-field"><label for="customer-name"><span data-i18n="name">Full name</span> <span class="app-required">*</span></label><input id="customer-name" type="text" name="customerName" autocomplete="name" placeholder="Your full name" maxlength="90" required data-placeholder="namePlaceholder"><span class="app-field-error" id="name-error" aria-live="polite"></span></div>
-            <div class="app-field"><label for="customer-phone"><span data-i18n="phone">Phone / WhatsApp number</span> <span class="app-required">*</span></label><input id="customer-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01XXXXXXXXX" maxlength="22" required data-placeholder="phonePlaceholder"><span class="app-field-error" id="phone-error" aria-live="polite"></span></div>
-            <div class="app-field"><label for="customer-email"><span data-i18n="email">Email address</span> <span class="app-optional" data-i18n="optional">Optional</span></label><input id="customer-email" name="email" type="email" autocomplete="email" maxlength="140" placeholder="name@example.com" data-placeholder="emailPlaceholder"><span class="app-field-error" id="email-error" aria-live="polite"></span></div>
-            <div class="app-field app-field--note"><label for="customer-notes"><span data-i18n="note">Additional note</span> <span class="app-optional" data-i18n="optional">Optional</span></label><textarea id="customer-notes" name="notes" maxlength="500" rows="2" placeholder="Anything else you'd like us to know?" data-placeholder="notePlaceholder"></textarea></div>
+      <form id="application-form" class="enquiry-form" novalidate>
+        <div class="enquiry-form-header"><h2 data-i18n="formHeading">Tell us what you need</h2><span data-i18n="requiredHint">* Required</span></div>
+        <div class="enquiry-fields">
+          <div class="enquiry-field">
+            <label for="need-select"><span data-i18n="needLabel">What do you need help with?</span> <b>*</b></label>
+            <div class="enquiry-select-wrap"><select id="need-select" name="need" required><option value="" data-i18n="needPlaceholder">Select your request</option></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></div>
+            <small class="enquiry-error" id="need-error" aria-live="polite"></small>
           </div>
+          <div class="enquiry-field">
+            <label for="challenge-select"><span data-i18n="challengeLabel">What is the main issue?</span> <b>*</b></label>
+            <div class="enquiry-select-wrap"><select id="challenge-select" name="challenge" required disabled><option value="" data-i18n="challengePlaceholder">Select an option</option></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></div>
+            <small class="enquiry-error" id="challenge-error" aria-live="polite"></small>
+          </div>
+          <div class="enquiry-contact-title"><h3 data-i18n="contactHeading">Contact details</h3><span data-i18n="contactHint">We'll contact you about your request</span></div>
+          <div class="enquiry-contact-grid">
+            <div class="enquiry-field"><label for="customer-name"><span data-i18n="name">Full name</span> <b>*</b></label><input id="customer-name" name="customerName" autocomplete="name" maxlength="90" type="text" required data-placeholder="namePlaceholder" placeholder="Your full name"><small class="enquiry-error" id="name-error" aria-live="polite"></small></div>
+            <div class="enquiry-field"><label for="customer-phone"><span data-i18n="phone">Phone / WhatsApp</span> <b>*</b></label><input id="customer-phone" name="phone" autocomplete="tel" inputmode="tel" type="tel" maxlength="22" required data-placeholder="phonePlaceholder" placeholder="01XXXXXXXXX"><small class="enquiry-error" id="phone-error" aria-live="polite"></small></div>
+          </div>
+          <div class="enquiry-field"><label for="customer-email"><span data-i18n="email">Email</span> <small data-i18n="optional">Optional</small></label><input id="customer-email" name="email" autocomplete="email" type="email" maxlength="140" data-placeholder="emailPlaceholder" placeholder="name@example.com"><small class="enquiry-error" id="email-error" aria-live="polite"></small></div>
+          <details class="enquiry-note"><summary><span data-i18n="addNote">+ Add a note</span><small data-i18n="optional">Optional</small></summary><textarea id="customer-notes" name="notes" maxlength="500" rows="2" data-placeholder="notePlaceholder" placeholder="Any additional details..."></textarea></details>
         </div>
-        <div class="app-submit-area"><div class="app-submit-copy"><strong data-i18n="submitCaption">That's everything!</strong><p data-i18n="submitNote">WhatsApp will open with your choices and details. Review the message before sending.</p></div><button class="app-submit" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 1 0-7.6-4.2L3 21l4.3-1.4A9 9 0 0 0 12 21Z"/><path d="M8.5 8.5c.3 2.7 4.3 6.8 7.1 7.1l1.7-1.6-2.8-1.6-.9 1c-1.1-.5-2.5-1.9-3-3l1-.9-1.5-2.8Z"/></svg><span data-i18n="submit">Continue on WhatsApp</span><span aria-hidden="true">↗</span></button></div>
+        <div class="enquiry-form-footer"><button type="submit" class="enquiry-submit"><span data-i18n="submit">Continue on WhatsApp</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><p data-i18n="submitNote">A ready-made message will open. You review and send it.</p></div>
       </form>
     </div>
-    <div class="app-bottom-note"><span data-i18n="privacy">This is a static preview. We don't store your contact details on this website.</span><a href="./index.html" data-i18n="footerBack">Return to homepage</a></div>
+    <p class="enquiry-privacy" data-i18n="privacy">Preview website · Your contact details are not stored here.</p>
   </div>
 </main>
-<footer class="app-footer"><div class="site-container app-footer-inner"><span>© 2026 Arab Technology for Supplies</span><a href="tel:+201114447033">0111 444 7033</a></div></footer>
+<footer class="enquiry-footer"><div class="site-container"><span>© 2026 Arab Technology for Supplies</span><a href="tel:+201114447033">0111 444 7033</a></div></footer>
 </body>
 </html>
