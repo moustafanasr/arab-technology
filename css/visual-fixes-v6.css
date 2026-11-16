@@ -1,0 +1,80 @@
+/* Arab Technology V6 — clear application photos + accessible yellow footer CTA.
+   Loaded after existing styles; no changes to animations, product cards or enquiry behavior. */
+
+/* Footer: previous rule for all footer spans overrode the button's dark text.
+   Ensure the yellow CTA is legible and consistent on iPhone and desktop. */
+.site-footer .footer-grid .footer-request .button.button--yellow {
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  gap:13px;
+  background:#ffcc22;
+  color:#07264d;
+  border:1px solid #ffcc22;
+  border-radius:6px;
+  min-height:42px;
+  padding:0 17px;
+  font-size:11px;
+  font-weight:800;
+  line-height:1.15;
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
+  text-decoration:none;
+  opacity:1;
+}
+.site-footer .footer-grid .footer-request .button.button--yellow > span {
+  color:#07264d !important;
+  font-size:11px !important;
+  font-weight:800;
+  line-height:1.15;
+  opacity:1;
+}
+.site-footer .footer-grid .footer-request .button.button--yellow > span:last-child {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:17px;
+}
+.site-footer .footer-grid .footer-request .button.button--yellow svg.at-arrow-svg {
+  color:#07264d !important;
+  stroke:#07264d !important;
+  width:16px !important;
+  height:16px !important;
+}
+.site-footer .footer-grid .footer-request .button.button--yellow:hover {
+  background:#ffe075;
+  border-color:#ffe075;
+  box-shadow:0 9px 18px rgba(0,0,0,.15);
+}
+.site-footer .footer-grid .footer-request .button.button--yellow:focus-visible {
+  outline:3px solid #ffffff;
+  outline-offset:4px;
+}
+/* New assets provide more than 2x the source pixels per displayed card. */
+.section--industries .industry-card--choice > img {
+  display:block;
+  width:100%;
+  height:130px;
+  object-fit:cover;
+  object-position:center center;
+  image-rendering:auto;
+  border:0;
+  filter:none;
+}
+.section--industries .industry-card--choice:nth-child(1) > img{object-position:center 43%}
+.section--industries .industry-card--choice:nth-child(2) > img{object-position:center 48%}
+.section--industries .industry-card--choice:nth-child(3) > img{object-position:center 45%}
+.section--industries .industry-card--choice:nth-child(4) > img{object-position:center 50%}
+.enquiry-visual-image > img#selected-image {
+  width:100%;height:100%;object-fit:cover;object-position:center center;
+  image-rendering:auto;filter:none;
+}
+@media(max-width:970px){
+  .section--industries .industry-card--choice > img{height:120px;}
+}
+@media(max-width:740px){
+  .section--industries .industry-card--choice > img{height:115px;}
+}
+@media(max-width:420px){
+  .section--industries .industry-card--choice > img{height:100px;}
+  .site-footer .footer-grid .footer-request .button.button--yellow{min-height:43px;}
+}
