@@ -1,59 +1,73 @@
-# Arab Technology — V7 Content, Company Pages & Catalogue Update
+# Arab Technology for Supplies — Website V8
 
-This is a static **HTML/CSS/JavaScript** website intended for GitHub Pages. It is **not yet a WordPress theme**. The latest V6 layout, animation hooks and guided enquiry page are retained.
+**Static HTML + CSS + JavaScript**, ready for GitHub Pages as a client-review website. A future WordPress version can reuse the design system, content, and image assets.
 
-## Added in V7
+## Included
 
-- `about.html` — About Us, using the supplied `About Us.docx` content (mission, vision, services, commitment and company goals).
-- `policies.html` — central policies index.
-- 7 standalone legal/customer pages sourced from `policy.docx`:
-  - `privacy-policy.html`
-  - `terms-and-conditions.html`
-  - `shipping-delivery.html`
-  - `warranty-policy.html`
-  - `returns-replacements.html`
-  - `contact-support.html`
-  - `cookies-policy.html`
-- `resources.html` — catalogue, calibration report and policies hub.
-- `calibration.html` — visible preview and original PDF download of the 2000 kN machine calibration report.
-- `assets/documents/calibration-report-2000kn-2025.pdf` — **unaltered original** user-supplied report.
-- `assets/documents/calibration-report-preview.png` — rendered preview for browser compatibility.
-- Homepage category grid now has **five** categories: Concrete, Soil, Asphalt, Cement and **General Laboratory**. General laboratory accessories are awaiting confirmed product data (no fictional items).
-- 12 catalogued products remain published, and the two additional future products are drafted — but **not visible** — in `js/extra-products.js`.
-- About / policies / documents links added to homepage navigation and footer, and the original calibration record is linked only to the corresponding 2000 kN product's detail modal.
+- Responsive homepage with category navigation, six highlighted products, guided application selection, company information and technical documents.
+- Searchable/filterable equipment catalogue (`products.html`) containing exactly **12 devices from the supplied catalogue**.
+- **12 dedicated product pages** under `/products/` with product photos, technical information and related equipment.
+- Standalone About Us, Resources, Calibration Record, Contact, Guided Enquiry and Request a Quote pages.
+- Seven separate policy pages plus Policies index.
+- English/Arabic display, saved language preference, working mobile navigation, accessible SVG arrows.
+- GSAP + ScrollTrigger motion (progressive enhancement), subtle CSS perspective artwork, optional Lenis scroll for supported desktop browsers.
+- `assets/arab-technology-catalog.pdf` and historical calibration PDF.
+- Hidden drafts for two future products in `js/extra-products.js`, not public product listings.
 
-## Publication notes — IMPORTANT
+## Deployment on GitHub Pages
 
-1. **Two new devices**: Fill `js/extra-products.js` with the confirmed names, categories, actual product images, Arabic and English names, descriptions and technical specs, then set `published: true`. Place their images in `assets/`. Until then they will not appear publicly. Do not publish empty entries.
-2. **General laboratory accessories**: The category is included but accessory SKU data has not been supplied. Existing catalogued laboratory equipment remains, while accessories can be added once details arrive.
-3. **Calibration due date**: The supplied report states calibration date **03 September 2025**, and recalibration due **03 September 2026**. The website displays the document as a *historical, machine-specific record*, not current certification. Confirm calibration status with the company before making compliance claims.
-4. **Privacy of the calibration PDF**: The supplied report contains a client's name and location. Obtain approval to publish it publicly; remove the PDF and its links if the client does not grant permission. `calibration.html` is `noindex`, which does not restrict access to the PDF.
-5. **Privacy Policy**: `policy.docx` has a blank “Effective Date”. The website shows “To be confirmed”; the company should supply this date before launch.
-6. **Arabic text**: English About Us and policy content is sourced from the provided files. Arabic is a preliminary translation for the bilingual preview and should be reviewed/approved by the client, especially legal policies.
-7. **Claims**: Brand partner logos, fictitious reviews, unsupported certificates and unprovided equipment are intentionally excluded.
-8. **WhatsApp form**: Enquiry form opens WhatsApp and the visitor must send the prepared message. GitHub Pages does not store form submissions or provide a backend.
+1. Download and unzip the package.
+2. Put **all contents** at the repository root (`index.html` must be at the root).
+3. Push to `https://github.com/moustafanasr/arab-technology.git`.
+4. Repository **Settings → Pages → Deploy from a branch → main → /(root)**.
+5. Preview address: `https://moustafanasr.github.io/arab-technology/` after publishing.
 
-## Deploy to GitHub Pages
+Commands within your local repository:
 
-Upload the **contents of this directory** to the root of your existing `moustafanasr/arab-technology` repository (not a nested folder).
-
-```bash
+```sh
 git add -A
-git commit -m "Add company pages, policies and calibration report V7"
+git commit -m "Finalize Arab Technology website V8 and product pages"
 git push origin main
 ```
 
-In GitHub: Settings → Pages → Deploy from branch → `main` → `/(root)`.
+## File layout
 
-- Homepage: `https://moustafanasr.github.io/arab-technology/`
-- About: `https://moustafanasr.github.io/arab-technology/about.html`
-- Policies: `https://moustafanasr.github.io/arab-technology/policies.html`
-- Resources: `https://moustafanasr.github.io/arab-technology/resources.html`
-- Calibration: `https://moustafanasr.github.io/arab-technology/calibration.html`
+```text
+index.html
+products.html
+products/               (12 independent product detail pages)
+application.html        (guided enquiry with dependent selects)
+quote.html              (prefilled product quote enquiry)
+contact.html
+about.html
+resources.html
+calibration.html
+policies.html            (plus seven individual policy HTML pages)
+assets/                 (equipment photos and source PDFs)
+css/site.css            (shared design system and responsive CSS)
+css/legacy-inner-pages.css
+css/legacy-polish.css
+js/site.js              (nav and bilingual display)
+js/catalogue.js         (filtering and search)
+js/forms.js             (guided selection / quote WhatsApp links)
+js/motion.js            (optional animation)
+js/polyfills.js
+assets/product-data.json
+.nojekyll
+```
 
-### Files touched in the patch
+## Notes before public production launch
 
-- Updated: `index.html`, `application.html`, `js/app.js`, `README.md`
-- Added: `about.html`, 7 policy pages, `policies.html`, `resources.html`, `calibration.html`, `css/inner-pages.css`, `js/inner-pages.js`, `js/extra-products.js`, `assets/documents/`.
+**Important: this is a static preview, not a WordPress theme yet.** There is no admin panel, backend, real e-commerce checkout, mail server, or lead database. The enquiry forms **do not submit data to the site**: after local validation they open WhatsApp for the visitor to review and send the message themselves.
 
-No build tool or server backend is required. External GSAP/Lenis/Three.js libraries remain CDN-based in the existing V6 homepage; an internet connection is required for those optional effects.
+1. **Two new products:** their names, pictures and specifications were not supplied. Their drafts remain unpublished; do not invent product details. Update `assets/product-data.json`, create dedicated pages and catalogue cards after confirmation.
+2. **General Laboratory accessories:** the category is included. Do not publish specific accessories without a confirmed product list and photos.
+3. **Calibration document:** the supplied record is dated **3 September 2025** and says next calibration was due **3 September 2026**. The website labels it as a **historical document, not proof of current certification**. Verify permission to publish the customer's named report and obtain a newer record if needed.
+4. **Policies:** text is based on the seven policies provided in `policy.docx`; the Arabic version needs the client's approval. The Privacy Policy's effective date is not specified by the source and remains marked for confirmation.
+5. **Contact details:** verify phone numbers, business details and official support communication channels before final launch. The website does not claim an unconfirmed address, partnerships or client logos.
+6. This GitHub **preview uses `<meta name="robots" content="noindex,follow">`** so the temporary review URL is not indexed before the WordPress launch. Update metadata and add canonical production URLs when the final site goes live.
+7. Google Fonts, GSAP, ScrollTrigger and Lenis use external CDNs. **The site remains navigable and usable if animations fail to load.**
+
+## Product-page editing
+
+There are no build dependencies; all HTML files are human-editable. Product detail pages are standalone in `/products/`, so edit each page and matching catalogue cards directly. `assets/product-data.json` records the source-grounded specifications in a reusable structure for the WordPress migration.

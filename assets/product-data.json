@@ -1,0 +1,494 @@
+[
+  {
+    "id": "compression",
+    "en": "2000 kN Compression Testing Machine",
+    "ar": "ماكينة اختبار ضغط الخرسانة 2000 كيلو نيوتن",
+    "cat": "concrete",
+    "image": "compression-cut.png",
+    "short": "Digital compression testing for concrete cubes and cylinders.",
+    "arshort": "اختبار ضغط رقمي لمكعبات وأسطوانات الخرسانة.",
+    "specs": [
+      [
+        "Capacity",
+        "2000 kN",
+        "القدرة",
+        "2000 كيلو نيوتن"
+      ],
+      [
+        "Display",
+        "Digital LCD",
+        "الشاشة",
+        "LCD رقمية"
+      ],
+      [
+        "Power",
+        "220 V / 50 Hz / Single-phase",
+        "الكهرباء",
+        "220 فولت / 50 هرتز / فاز واحد"
+      ]
+    ],
+    "detail": "A compression testing machine supplied with a digital display unit. The catalogue describes automatic testing operation and use with concrete cube and cylinder specimens.",
+    "detail_ar": "ماكينة اختبار ضغط مزودة بوحدة عرض رقمية. يوضح الكتالوج التشغيل الأوتوماتيكي واستخدامها مع مكعبات وأسطوانات الخرسانة.",
+    "features": [
+      "Automatic test operation through the digital display unit",
+      "Designed for compression tests on concrete specimens",
+      "Two operating speeds for contact and testing"
+    ],
+    "features_ar": [
+      "تشغيل اختبار أوتوماتيكي عبر وحدة العرض الرقمية",
+      "مناسبة لاختبارات الضغط على عينات الخرسانة",
+      "سرعتان للتلامس والاختبار"
+    ]
+  },
+  {
+    "id": "cbr",
+    "en": "Automatic CBR Testing Machine",
+    "ar": "جهاز اختبار CBR أوتوماتيكي",
+    "cat": "soil",
+    "image": "cbr-cut.png",
+    "short": "Digital load and penetration results for CBR testing.",
+    "arshort": "نتائج رقمية للحمل والاختراق في اختبار CBR.",
+    "specs": [
+      [
+        "Capacity",
+        "50 kN",
+        "القدرة",
+        "50 كيلو نيوتن"
+      ],
+      [
+        "Penetration resolution",
+        "0.01 mm",
+        "دقة الاختراق",
+        "0.01 مم"
+      ],
+      [
+        "Measurement",
+        "Electronic load cell",
+        "القياس",
+        "خلية حمل إلكترونية"
+      ]
+    ],
+    "detail": "Automatic CBR machine featuring an electronic load cell and penetration measurement. The display provides load and penetration results during testing.",
+    "detail_ar": "جهاز CBR أوتوماتيكي بخلية حمل إلكترونية لقياس الحمل والاختراق، مع عرض النتائج رقميًا أثناء الاختبار.",
+    "features": [
+      "Automatic test sequence",
+      "Electronic penetration measurement",
+      "Digital test results"
+    ],
+    "features_ar": [
+      "تسلسل اختبار أوتوماتيكي",
+      "قياس إلكتروني للاختراق",
+      "نتائج اختبار رقمية"
+    ]
+  },
+  {
+    "id": "marshall",
+    "en": "Automatic Marshall Testing Machine",
+    "ar": "ماكينة اختبار مارشال أوتوماتيكية",
+    "cat": "asphalt",
+    "image": "marshall-cut.png",
+    "short": "Marshall stability and flow measurements with a digital display.",
+    "arshort": "قياس ثبات مارشال والانسياب مع شاشة رقمية.",
+    "specs": [
+      [
+        "Capacity",
+        "30 kN",
+        "القدرة",
+        "30 كيلو نيوتن"
+      ],
+      [
+        "Test speed",
+        "50.8 mm/min",
+        "سرعة الاختبار",
+        "50.8 مم/دقيقة"
+      ],
+      [
+        "Display",
+        "Digital LCD",
+        "الشاشة",
+        "LCD رقمية"
+      ]
+    ],
+    "detail": "An automatic Marshall compression testing machine equipped with electronic load and flow measurement and a digital operating display.",
+    "detail_ar": "ماكينة مارشال أوتوماتيكية مزودة بقياس إلكتروني للحمل والانسياب وشاشة تشغيل رقمية.",
+    "features": [
+      "Electronic load and flow readings",
+      "Automatic test operation",
+      "Digital operating display"
+    ],
+    "features_ar": [
+      "قراءات إلكترونية للحمل والانسياب",
+      "تشغيل اختبار أوتوماتيكي",
+      "شاشة تشغيل رقمية"
+    ]
+  },
+  {
+    "id": "abrasion",
+    "en": "Los Angeles Abrasion Testing Machine",
+    "ar": "جهاز اختبار التآكل لوس أنجلوس",
+    "cat": "asphalt",
+    "image": "abrasion-cut.png",
+    "short": "Aggregate abrasion resistance testing with digital revolution counter.",
+    "arshort": "اختبار مقاومة تآكل الركام بعداد لفات رقمي.",
+    "specs": [
+      [
+        "Motor",
+        "1 hp",
+        "الموتور",
+        "1 حصان"
+      ],
+      [
+        "Revolution counter",
+        "Digital",
+        "عداد اللفات",
+        "رقمي"
+      ],
+      [
+        "Grinding charge",
+        "12 steel balls",
+        "كرات الاختبار",
+        "12 كرة فولاذية"
+      ]
+    ],
+    "detail": "Abrasion testing equipment for aggregates. The catalogue describes a digital revolution counter, 12 iron balls and a safety stopping device.",
+    "detail_ar": "جهاز اختبار التآكل للركام، ويذكر الكتالوج عداد لفات رقميًا و12 كرة حديدية وآلية توقف للحماية.",
+    "features": [
+      "Digital revolution count",
+      "Protective stop mechanism",
+      "Used in aggregate abrasion testing"
+    ],
+    "features_ar": [
+      "عداد لفات رقمي",
+      "آلية توقف للحماية",
+      "يستخدم في اختبار تآكل الركام"
+    ]
+  },
+  {
+    "id": "oven",
+    "en": "Electric Laboratory Drying Oven",
+    "ar": "فرن تجفيف معملي كهربائي",
+    "cat": "laboratory",
+    "image": "oven-card.webp",
+    "short": "Thermally insulated oven with digital temperature indication.",
+    "arshort": "فرن معزول حراريًا مع عرض رقمي لدرجة الحرارة.",
+    "specs": [
+      [
+        "Capacity",
+        "120 litres",
+        "السعة",
+        "120 لتر"
+      ],
+      [
+        "Internal chamber",
+        "Stainless steel",
+        "الحجرة الداخلية",
+        "ستانلس ستيل"
+      ],
+      [
+        "Temperature",
+        "Digital monitoring",
+        "الحرارة",
+        "مراقبة رقمية"
+      ]
+    ],
+    "detail": "A laboratory drying oven with thermally insulated construction, a stainless-steel internal chamber and digital temperature indication.",
+    "detail_ar": "فرن تجفيف معملي بتصميم معزول حراريًا وحجرة داخلية من الستانلس ستيل وقراءة رقمية لدرجة الحرارة.",
+    "features": [
+      "Thermal insulation",
+      "Stainless-steel internal chamber",
+      "Air-circulation fan described in the catalogue"
+    ],
+    "features_ar": [
+      "عزل حراري",
+      "حجرة داخلية من الستانلس ستيل",
+      "مروحة لتوزيع الهواء وفقًا للكتالوج"
+    ]
+  },
+  {
+    "id": "compactor",
+    "en": "Automatic Marshall Compactor",
+    "ar": "جهاز دمك مارشال الأوتوماتيكي",
+    "cat": "asphalt",
+    "image": "compactor-cut.png",
+    "short": "Automated sample compaction with adjustable blow count.",
+    "arshort": "دمك أوتوماتيكي للعينات مع ضبط عدد الطرقات.",
+    "specs": [
+      [
+        "Rammer",
+        "4500 g modified",
+        "وزن المطرقة",
+        "4500 جرام (معدل)"
+      ],
+      [
+        "Control",
+        "Digital display",
+        "التحكم",
+        "شاشة رقمية"
+      ],
+      [
+        "Base",
+        "Wooden pedestal",
+        "القاعدة",
+        "خشبية"
+      ]
+    ],
+    "detail": "An automatic apparatus for compacting Marshall specimens, with user-set blow count through a digital display and a wooden pedestal.",
+    "detail_ar": "جهاز أوتوماتيكي لدمك عينات مارشال مع إمكانية ضبط عدد الطرقات من الشاشة الرقمية وقاعدة خشبية.",
+    "features": [
+      "Automatic compaction cycle",
+      "Adjustable blow count",
+      "Wooden pedestal"
+    ],
+    "features_ar": [
+      "دورة دمك أوتوماتيكية",
+      "ضبط عدد الطرقات",
+      "قاعدة خشبية"
+    ]
+  },
+  {
+    "id": "centrifuge",
+    "en": "Electric Centrifuge Extractor",
+    "ar": "جهاز استخلاص الطرد المركزي الكهربائي",
+    "cat": "asphalt",
+    "image": "centrifuge-cut.png",
+    "short": "Determines bitumen proportion in bituminous mixtures.",
+    "arshort": "قياس نسبة البيتومين في الخلطات الأسفلتية.",
+    "specs": [
+      [
+        "Capacity",
+        "3000 g",
+        "السعة",
+        "3000 جرام"
+      ],
+      [
+        "Speed",
+        "Up to 3600 rpm",
+        "السرعة",
+        "حتى 3600 دورة/دقيقة"
+      ],
+      [
+        "Control",
+        "Digital speed control",
+        "التحكم",
+        "تحكم رقمي بالسرعة"
+      ]
+    ],
+    "detail": "Centrifuge extractor for determining the proportion of bitumen in bituminous mixtures, with digital display and variable speed.",
+    "detail_ar": "جهاز استخلاص بالطرد المركزي لتحديد نسبة البيتومين في الخلطات الأسفلتية، مزود بشاشة رقمية وسرعة متغيرة.",
+    "features": [
+      "Digital speed indication and control",
+      "Safety arrangement during rotation",
+      "Designed for bitumen extraction"
+    ],
+    "features_ar": [
+      "عرض وتحكم رقمي بالسرعة",
+      "تجهيز أمان أثناء الدوران",
+      "مخصص لاستخلاص البيتومين"
+    ]
+  },
+  {
+    "id": "waterbath",
+    "en": "Digital Laboratory Water Bath",
+    "ar": "حمام مائي معملي رقمي",
+    "cat": "laboratory",
+    "image": "waterbath.webp",
+    "short": "Water bath for Marshall moulds with thermostat control.",
+    "arshort": "حمام مائي لقوالب مارشال مزود بتحكم ثرموستاتي.",
+    "specs": [
+      [
+        "Capacity",
+        "40 litres",
+        "السعة",
+        "40 لتر"
+      ],
+      [
+        "Control",
+        "Thermostat + digital display",
+        "التحكم",
+        "ثرموستات وشاشة رقمية"
+      ],
+      [
+        "Internal chamber",
+        "Stainless steel",
+        "الحوض الداخلي",
+        "ستانلس ستيل"
+      ]
+    ],
+    "detail": "A temperature-controlled water bath for Marshall moulds, fitted with thermostat, digital display and a stainless-steel internal chamber.",
+    "detail_ar": "حمام مائي للتحكم في الحرارة لقوالب مارشال، مزود بثرموستات وشاشة رقمية وحوض داخلي من الستانلس ستيل.",
+    "features": [
+      "Digital temperature display",
+      "Stainless-steel inner chamber",
+      "40-litre capacity"
+    ],
+    "features_ar": [
+      "عرض رقمي للحرارة",
+      "حوض داخلي من الستانلس ستيل",
+      "سعة 40 لتر"
+    ]
+  },
+  {
+    "id": "vicat",
+    "en": "Vicat Test Set",
+    "ar": "جهاز اختبار فيكات",
+    "cat": "cement",
+    "image": "vicat.webp",
+    "short": "Apparatus for determining cement setting characteristics.",
+    "arshort": "جهاز لتحديد خصائص زمن شك الأسمنت.",
+    "specs": [
+      [
+        "Test",
+        "Cement setting time",
+        "الاختبار",
+        "زمن شك الأسمنت"
+      ],
+      [
+        "Graduation",
+        "Graduated scale",
+        "التدريج",
+        "مقياس مدرج"
+      ],
+      [
+        "Needles",
+        "Initial and final",
+        "الإبر",
+        "ابتدائي ونهائي"
+      ]
+    ],
+    "detail": "Vicat test apparatus with a metal frame, sliding rod, graduated scale and needles for initial and final setting tests.",
+    "detail_ar": "جهاز فيكات بإطار معدني وقضيب منزلق ومقياس مدرج وإبر لاختباري الشك الابتدائي والنهائي.",
+    "features": [
+      "Sliding rod and graduated scale",
+      "Initial and final test needles",
+      "Metal frame"
+    ],
+    "features_ar": [
+      "قضيب منزلق ومقياس مدرج",
+      "إبر الشك الابتدائي والنهائي",
+      "إطار معدني"
+    ]
+  },
+  {
+    "id": "proctor",
+    "en": "Automatic Proctor Compactor",
+    "ar": "جهاز بروكتور أوتوماتيكي",
+    "cat": "soil",
+    "image": "proctor-cut.png",
+    "short": "Automatic soil specimen compaction for Proctor testing.",
+    "arshort": "دمك أوتوماتيكي لعينات التربة لاختبار بروكتور.",
+    "specs": [
+      [
+        "Specimen diameter",
+        "4 / 6 inches",
+        "قطر العينات",
+        "4 / 6 بوصات"
+      ],
+      [
+        "Programs",
+        "Standard / Modified",
+        "الاختبار",
+        "قياسي / معدل"
+      ],
+      [
+        "Display",
+        "LCD",
+        "الشاشة",
+        "LCD"
+      ]
+    ],
+    "detail": "An automatic digital Proctor compactor suitable for standard and modified compaction of 4-inch and 6-inch specimens.",
+    "detail_ar": "جهاز بروكتور رقمي أوتوماتيكي مناسب لاختبارات الدمك القياسية والمعدلة لعينات قطر 4 و6 بوصات.",
+    "features": [
+      "Selection of standard or modified test",
+      "Automatic operation",
+      "Noise-reduction cabinet described in catalogue"
+    ],
+    "features_ar": [
+      "اختيار الاختبار القياسي أو المعدل",
+      "تشغيل أوتوماتيكي",
+      "كابينة لخفض الضوضاء كما ورد بالكتالوج"
+    ]
+  },
+  {
+    "id": "extruder",
+    "en": "Universal Sample Extruder",
+    "ar": "جهاز إخراج العينات العام",
+    "cat": "soil",
+    "image": "extruder.webp",
+    "short": "Mechanical extraction of soil specimens from moulds.",
+    "arshort": "إخراج عينات التربة من القوالب ميكانيكيًا.",
+    "specs": [
+      [
+        "Capacity",
+        "5 tons",
+        "القدرة",
+        "5 طن"
+      ],
+      [
+        "Mould size",
+        "4 / 6 inches",
+        "مقاس القوالب",
+        "4 / 6 بوصات"
+      ],
+      [
+        "Operation",
+        "Manual",
+        "التشغيل",
+        "يدوي"
+      ]
+    ],
+    "detail": "A manual universal specimen extruder suitable for 4-inch and 6-inch moulds, with a listed capacity of 5 tons.",
+    "detail_ar": "جهاز إخراج عينات يدوي مناسب للقوالب قطر 4 و6 بوصات، بقدرة مذكورة في الكتالوج تبلغ 5 أطنان.",
+    "features": [
+      "Hand-operated design",
+      "Used with 4- and 6-inch specimens",
+      "5-ton stated capacity"
+    ],
+    "features_ar": [
+      "تصميم يعمل يدويًا",
+      "مناسب لعينات 4 و6 بوصات",
+      "قدرة مذكورة 5 أطنان"
+    ]
+  },
+  {
+    "id": "sandcone",
+    "en": "Sand Density Cone",
+    "ar": "جهاز مخروط كثافة الرمل",
+    "cat": "soil",
+    "image": "sandcone.webp",
+    "short": "Field apparatus for in-situ soil density measurements.",
+    "arshort": "جهاز موقعي لقياس كثافة التربة في مكانها.",
+    "specs": [
+      [
+        "Cone diameter",
+        "6 inches",
+        "قطر المخروط",
+        "6 بوصات"
+      ],
+      [
+        "Container",
+        "5-litre plastic jar",
+        "الوعاء",
+        "بلاستيك 5 لتر"
+      ],
+      [
+        "Application",
+        "In-situ density",
+        "الاستخدام",
+        "كثافة التربة بالموقع"
+      ]
+    ],
+    "detail": "Sand cone density apparatus used to determine soil density on site, supplied with a 6-inch cone and 5-litre plastic jar.",
+    "detail_ar": "جهاز مخروط الرمل لتحديد كثافة التربة بالموقع، مزود بمخروط قطر 6 بوصات ووعاء بلاستيكي سعة 5 لترات.",
+    "features": [
+      "Field measurement of soil density",
+      "6-inch cone",
+      "5-litre plastic jar"
+    ],
+    "features_ar": [
+      "قياس كثافة التربة في الموقع",
+      "مخروط 6 بوصات",
+      "وعاء بلاستيكي سعة 5 لترات"
+    ]
+  }
+]

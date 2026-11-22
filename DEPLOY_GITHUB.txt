@@ -1,14 +1,25 @@
-ARAB TECHNOLOGY — V7 STATIC HTML/CSS/JS
+Arab Technology — upload commands
 
-1. Extract ZIP.
-2. Copy ALL files and folders to the ROOT of your GitHub repository.
-3. Run these commands in VS Code terminal, inside the repo:
+1. Unzip the supplied website and place all files in the root of your local arab-technology repository.
+2. Open VS Code terminal inside the repository folder.
 
-   git add -A
-   git commit -m "Arab Technology V7 About Policies Calibration"
-   git push origin main
+Git commands:
+    git add -A
+    git commit -m "Finalize Arab Technology website V8 and product pages"
+    git push origin main
 
-4. Confirm Settings > Pages > main > /(root).
-5. Check /about.html, /policies.html, /resources.html, /calibration.html.
-6. Before launch, verify calibration publication permission, certificate status,
-   legal translations/effective date, and the two unpublished new products.
+If it is the first upload to a new empty repository, run instead:
+    git init
+    git branch -M main
+    git remote add origin https://github.com/moustafanasr/arab-technology.git
+    git add -A
+    git commit -m "Arab Technology website V8"
+    git push -u origin main
+
+GitHub Pages:
+    Settings > Pages > Deploy from a branch > main > /(root) > Save
+
+Preview:
+    https://moustafanasr.github.io/arab-technology/
+
+Note: Do not force-push over another person's changes. Check git status first.

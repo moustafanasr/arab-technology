@@ -1,0 +1,18 @@
+/* Consistency updates for source-backed legal, About and resource pages. */
+.inner-page{font-size:13px;color:#0a3158;background:#fff}
+.inner-page .inner-hero{background:#f2f7fd}
+.inner-page .about-hero{background:linear-gradient(115deg,#062647,#0b3c72)}
+.inner-page .inner-hero{padding:54px 0}
+.inner-page .inner-hero h1{font-size:clamp(31px,3.4vw,44px)}
+.inner-page .about-hero h1{font-size:clamp(31px,3.6vw,47px)}
+.inner-page .about-cta .button,.inner-page .policy-end-cta .button {background:#ffca20;color:#082b53!important;display:inline-flex;align-items:center;justify-content:center;border-radius:6px;padding:0 20px;font-weight:800}
+.inner-page .about-cta .button:hover,.inner-page .policy-end-cta .button:hover{background:#f1ba00}
+.inner-page .page-section{padding:53px 0}
+.inner-page .policy-tile{border-radius:10px;box-shadow:none}
+.inner-page .document-paper{max-width:100%}
+.inner-page main{min-height:40vh}
+.inner-page .site-footer p{font-size:11px}
+html[dir="rtl"] .inner-page .footer-col h3{letter-spacing:0}
+@media(max-width:720px){.inner-page .page-section{padding:36px 0}.inner-page .inner-hero{padding:39px 0}.inner-page .about-hero h1{font-size:33px}}
+
+@media(min-width:701px) and (max-width:920px){.inner-page .about-intro{grid-template-columns:minmax(0,30%) minmax(0,1fr);gap:25px}.inner-page .about-intro>*{min-width:0}}
