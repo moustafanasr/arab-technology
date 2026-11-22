@@ -1,71 +1,72 @@
-<!doctype html>
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0a2c52">
-  <meta name="description" content="Select your equipment requirement and request guidance from Arab Technology.">
-  <title>Equipment Enquiry | Arab Technology for Supplies</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./css/styles.css?v=3.2">
-  <link rel="stylesheet" href="./css/application-flow.css?v=5.0">
-  <link rel="stylesheet" href="./css/visual-fixes-v6.css?v=6.0">
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
-  <script src="./js/application.js?v=5.0" defer></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#0a2c52" name="theme-color"/>
+<meta content="Select your equipment requirement and request guidance from Arab Technology." name="description"/>
+<title>Equipment Enquiry | Arab Technology for Supplies</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="./assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="./css/styles.css?v=3.2" rel="stylesheet"/>
+<link href="./css/application-flow.css?v=5.0" rel="stylesheet"/>
+<link href="./css/visual-fixes-v6.css?v=6.0" rel="stylesheet"/>
+<script defer="" src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script defer="" src="./js/application.js?v=5.0"></script>
 </head>
 <body class="application-page">
 <a class="skip" href="#application-main">Skip to form</a>
 <header class="enquiry-header">
-  <div class="site-container enquiry-header-inner">
-    <a class="enquiry-brand" href="./index.html" aria-label="Arab Technology home"><img src="./assets/logo-mark.png" alt="" width="42" height="42"><span><strong>ARAB TECHNOLOGY</strong><small>FOR SUPPLIES</small></span></a>
-    <div class="enquiry-header-actions">
-      <a class="enquiry-back" href="./index.html#industries"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m7 7-7-7 7-7"/></svg><span data-i18n="back">Back to website</span></a>
-      <button type="button" id="app-language" aria-label="Switch language">العربية</button>
-    </div>
-  </div>
+<div class="site-container enquiry-header-inner">
+<a aria-label="Arab Technology home" class="enquiry-brand" href="./index.html"><img alt="" height="42" src="./assets/logo-mark.png" width="42"/><span><strong>ARAB TECHNOLOGY</strong><small>FOR SUPPLIES</small></span></a>
+<div class="enquiry-header-actions"><a class="app-about-link" href="./about.html">About Us</a>
+<a class="enquiry-back" href="./index.html#industries"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M19 12H5m7 7-7-7 7-7"></path></svg><span data-i18n="back">Back to website</span></a>
+<button aria-label="Switch language" id="app-language" type="button">العربية</button>
+</div>
+</div>
 </header>
-<main id="application-main" class="enquiry-main">
-  <div class="site-container enquiry-container">
-    <div class="enquiry-intro">
-      <span class="enquiry-eyebrow" data-i18n="eyebrow">EQUIPMENT ENQUIRY</span>
-      <h1 data-i18n="heading">Find the right testing equipment.</h1>
-      <p data-i18n="lead">Select your request and leave your number. We'll help you choose.</p>
-    </div>
-    <div class="enquiry-layout">
-      <aside class="enquiry-visual" aria-labelledby="preview-heading">
-        <div class="enquiry-visual-image"><img id="selected-image" width="836" height="470" src="./assets/industry-lab-hd.webp" alt="Laboratory equipment" loading="eager"><span class="enquiry-image-label" data-i18n="imageTag">YOUR REQUEST</span></div>
-        <div class="enquiry-visual-caption"><span class="enquiry-indicator"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span><div><h2 id="preview-heading">Testing laboratory equipment</h2><p id="selected-description">Choose a type of request to get started.</p></div></div>
-      </aside>
-      <form id="application-form" class="enquiry-form" novalidate>
-        <div class="enquiry-form-header"><h2 data-i18n="formHeading">Tell us what you need</h2><span data-i18n="requiredHint">* Required</span></div>
-        <div class="enquiry-fields">
-          <div class="enquiry-field">
-            <label for="need-select"><span data-i18n="needLabel">What do you need help with?</span> <b>*</b></label>
-            <div class="enquiry-select-wrap"><select id="need-select" name="need" required><option value="" data-i18n="needPlaceholder">Select your request</option></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></div>
-            <small class="enquiry-error" id="need-error" aria-live="polite"></small>
-          </div>
-          <div class="enquiry-field">
-            <label for="challenge-select"><span data-i18n="challengeLabel">What is the main issue?</span> <b>*</b></label>
-            <div class="enquiry-select-wrap"><select id="challenge-select" name="challenge" required disabled><option value="" data-i18n="challengePlaceholder">Select an option</option></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></div>
-            <small class="enquiry-error" id="challenge-error" aria-live="polite"></small>
-          </div>
-          <div class="enquiry-contact-title"><h3 data-i18n="contactHeading">Contact details</h3><span data-i18n="contactHint">We'll contact you about your request</span></div>
-          <div class="enquiry-contact-grid">
-            <div class="enquiry-field"><label for="customer-name"><span data-i18n="name">Full name</span> <b>*</b></label><input id="customer-name" name="customerName" autocomplete="name" maxlength="90" type="text" required data-placeholder="namePlaceholder" placeholder="Your full name"><small class="enquiry-error" id="name-error" aria-live="polite"></small></div>
-            <div class="enquiry-field"><label for="customer-phone"><span data-i18n="phone">Phone / WhatsApp</span> <b>*</b></label><input id="customer-phone" name="phone" autocomplete="tel" inputmode="tel" type="tel" maxlength="22" required data-placeholder="phonePlaceholder" placeholder="01XXXXXXXXX"><small class="enquiry-error" id="phone-error" aria-live="polite"></small></div>
-          </div>
-          <div class="enquiry-field"><label for="customer-email"><span data-i18n="email">Email</span> <small data-i18n="optional">Optional</small></label><input id="customer-email" name="email" autocomplete="email" type="email" maxlength="140" data-placeholder="emailPlaceholder" placeholder="name@example.com"><small class="enquiry-error" id="email-error" aria-live="polite"></small></div>
-          <details class="enquiry-note"><summary><span data-i18n="addNote">+ Add a note</span><small data-i18n="optional">Optional</small></summary><textarea id="customer-notes" name="notes" maxlength="500" rows="2" data-placeholder="notePlaceholder" placeholder="Any additional details..."></textarea></details>
-        </div>
-        <div class="enquiry-form-footer"><button type="submit" class="enquiry-submit"><span data-i18n="submit">Continue on WhatsApp</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><p data-i18n="submitNote">A ready-made message will open. You review and send it.</p></div>
-      </form>
-    </div>
-    <p class="enquiry-privacy" data-i18n="privacy">Preview website · Your contact details are not stored here.</p>
-  </div>
-</main>
+<main class="enquiry-main" id="application-main">
+<div class="site-container enquiry-container">
+<div class="enquiry-intro">
+<span class="enquiry-eyebrow" data-i18n="eyebrow">EQUIPMENT ENQUIRY</span>
+<h1 data-i18n="heading">Find the right testing equipment.</h1>
+<p data-i18n="lead">Select your request and leave your number. We'll help you choose.</p>
+</div>
+<div class="enquiry-layout">
+<aside aria-labelledby="preview-heading" class="enquiry-visual">
+<div class="enquiry-visual-image"><img alt="Laboratory equipment" height="470" id="selected-image" loading="eager" src="./assets/industry-lab-hd.webp" width="836"/><span class="enquiry-image-label" data-i18n="imageTag">YOUR REQUEST</span></div>
+<div class="enquiry-visual-caption"><span class="enquiry-indicator"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24"><path d="m5 12 5 5L20 7"></path></svg></span><div><h2 id="preview-heading">Testing laboratory equipment</h2><p id="selected-description">Choose a type of request to get started.</p></div></div>
+</aside>
+<form class="enquiry-form" id="application-form" novalidate="">
+<div class="enquiry-form-header"><h2 data-i18n="formHeading">Tell us what you need</h2><span data-i18n="requiredHint">* Required</span></div>
+<div class="enquiry-fields">
+<div class="enquiry-field">
+<label for="need-select"><span data-i18n="needLabel">What do you need help with?</span> <b>*</b></label>
+<div class="enquiry-select-wrap"><select id="need-select" name="need" required=""><option data-i18n="needPlaceholder" value="">Select your request</option></select><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></div>
+<small aria-live="polite" class="enquiry-error" id="need-error"></small>
+</div>
+<div class="enquiry-field">
+<label for="challenge-select"><span data-i18n="challengeLabel">What is the main issue?</span> <b>*</b></label>
+<div class="enquiry-select-wrap"><select disabled="" id="challenge-select" name="challenge" required=""><option data-i18n="challengePlaceholder" value="">Select an option</option></select><svg aria-hidden="true" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></div>
+<small aria-live="polite" class="enquiry-error" id="challenge-error"></small>
+</div>
+<div class="enquiry-contact-title"><h3 data-i18n="contactHeading">Contact details</h3><span data-i18n="contactHint">We'll contact you about your request</span></div>
+<div class="enquiry-contact-grid">
+<div class="enquiry-field"><label for="customer-name"><span data-i18n="name">Full name</span> <b>*</b></label><input autocomplete="name" data-placeholder="namePlaceholder" id="customer-name" maxlength="90" name="customerName" placeholder="Your full name" required="" type="text"/><small aria-live="polite" class="enquiry-error" id="name-error"></small></div>
+<div class="enquiry-field"><label for="customer-phone"><span data-i18n="phone">Phone / WhatsApp</span> <b>*</b></label><input autocomplete="tel" data-placeholder="phonePlaceholder" id="customer-phone" inputmode="tel" maxlength="22" name="phone" placeholder="01XXXXXXXXX" required="" type="tel"/><small aria-live="polite" class="enquiry-error" id="phone-error"></small></div>
+</div>
+<div class="enquiry-field"><label for="customer-email"><span data-i18n="email">Email</span> <small data-i18n="optional">Optional</small></label><input autocomplete="email" data-placeholder="emailPlaceholder" id="customer-email" maxlength="140" name="email" placeholder="name@example.com" type="email"/><small aria-live="polite" class="enquiry-error" id="email-error"></small></div>
+<details class="enquiry-note"><summary><span data-i18n="addNote">+ Add a note</span><small data-i18n="optional">Optional</small></summary><textarea data-placeholder="notePlaceholder" id="customer-notes" maxlength="500" name="notes" placeholder="Any additional details..." rows="2"></textarea></details>
+</div>
+<div class="enquiry-form-footer"><button class="enquiry-submit" type="submit"><span data-i18n="submit">Continue on WhatsApp</span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></button><p data-i18n="submitNote">A ready-made message will open. You review and send it.</p></div>
+</form>
+</div>
+<p class="enquiry-privacy" data-i18n="privacy">Preview website · Your contact details are not stored here.</p>
+</div>
+<div class="site-container" style="text-align:center;padding:12px 0 35px;font-size:11px"><a href="./policies.html" style="color:#527297;text-decoration:underline">Website policies / سياسات الموقع</a></div></main>
 <footer class="enquiry-footer"><div class="site-container"><span>© 2026 Arab Technology for Supplies</span><a href="tel:+201114447033">0111 444 7033</a></div></footer>
 </body>
 </html>

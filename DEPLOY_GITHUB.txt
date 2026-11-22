@@ -1,19 +1,14 @@
-Arab Technology UI Match v3.1 — GitHub Deployment
+ARAB TECHNOLOGY — V7 STATIC HTML/CSS/JS
 
-Repository: https://github.com/moustafanasr/arab-technology.git
+1. Extract ZIP.
+2. Copy ALL files and folders to the ROOT of your GitHub repository.
+3. Run these commands in VS Code terminal, inside the repo:
 
-1. Download and unzip the archive.
-2. Copy all files to your local repository (index.html at root).
-3. Open terminal in the local repository folder.
-4. Run:
-
-   git status
    git add -A
-   git commit -m "Implement approved Arab Technology homepage design"
+   git commit -m "Arab Technology V7 About Policies Calibration"
    git push origin main
 
-5. In repository Settings > Pages, publish main branch / (root).
-6. Website URL after GitHub Pages deployment:
-   https://moustafanasr.github.io/arab-technology/
-
-If there are uncommitted changes in your existing repository, commit or back them up before copying in this version. Do not use git push --force.
+4. Confirm Settings > Pages > main > /(root).
+5. Check /about.html, /policies.html, /resources.html, /calibration.html.
+6. Before launch, verify calibration publication permission, certificate status,
+   legal translations/effective date, and the two unpublished new products.
